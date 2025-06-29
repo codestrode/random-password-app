@@ -21,6 +21,7 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+#adding a dummy comment to test
 @app.get("/generate-password")
 def generate_password(
     password_type: str = Query("a", regex="^(n|l|a)$"),  # n=number, l=letter, a=all
